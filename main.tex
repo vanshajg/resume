@@ -1,0 +1,141 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage{xcolor}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+    {\Huge \scshape {Vanshaj Girotra}}\\
+    Delhi, India $\cdot$ vanshajgirotra@gmail.com $\cdot$ +91 8377872112 $\cdot$  \href{https://www.vanshajgirotra.com}{\underline{vanshajgirotra.com}}\\
+\end{center}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Godaddy} \hfill Remote\\
+\textit{Software engineer 2}  — {\sl Java, SpringBoot, JavaScript}  \hfill July 2019 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item item1
+    \item item2
+    \item item3
+    \item item4
+\end{itemize}
+
+\textbf{Practo} \hfill Bengaluru, India \\ 
+\textit{Software Engineer 2}  — {\sl tech1, tech2, tech3} \hfill Dec 2020 - Apr 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Item1
+    \item item2
+\end{itemize}
+
+\textit{Software Engineer 1} — {\sl tech1, tech2} \hfill Oct 2019 - Dec 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+\item item1
+\end{itemize}
+
+
+\textit{Software Engineering Intern} — {\sl tech1, tech2} \hfill Oct 2019 - Dec 2020\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+\item item1
+\end{itemize}
+
+%==== Education ====%
+\header{Education}
+\textbf{University school of information, communication and technology}\hfill Delhi, India\\
+B.tech Computing Science \hfill Aug 2015 - Jun 2019\\
+\vspace*{2mm}
+
+%==== Projects ====%
+\header{Projects}
+{\textbf{Project 1}} — {\sl tech1, 2 ,3} \hfill url\\
+desc
+\vspace*{1mm}
+
+
+
+
+\header{Technologies}
+\begin{tabular}{ l l }
+	Programming Languages: & golang, javascript \\
+	Front-end Stack:       & react \\
+	Back-end Stack:        & node, springboot     \\
+	Cloud Environments:    & aws           \\
+\end{tabular}
+\vspace{2mm}
+
+\
+\end{document}
