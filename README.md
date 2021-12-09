@@ -1,1 +1,1 @@
-https://resume.vanshajgirotra.com/
+resume.vanshajgirotra.com/
